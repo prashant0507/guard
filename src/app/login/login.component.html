@@ -1,0 +1,11 @@
+<h1>login works!</h1>
+
+<form [formGroup]="login" (submit)="onSubmit()">
+    <input type="text" formControlName="username" placeholder="User Name">
+    <br/>
+    <br/>
+    <input type="password" formControlName="password" placeholder="Password">
+    <br/>
+    <br/>
+    <button type="submit">Login</button>
+</form>
