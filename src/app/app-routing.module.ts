@@ -4,6 +4,7 @@ import { LoginComponent } from './login/login.component';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { ActivateGuard } from './shared/guards/activate.guard';
+import { DeactivateGuard } from './shared/guards/deactivate.guard';
 
 const routes: Routes = [
   {
@@ -24,7 +25,8 @@ const routes: Routes = [
   {
     path:'contact',
     component:ContactComponent,
-    canActivate:[ActivateGuard]
+    canActivate:[ActivateGuard],
+    canDeactivate:[DeactivateGuard]
   }
 ];
 

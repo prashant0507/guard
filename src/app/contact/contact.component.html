@@ -1,2 +1,11 @@
 <app-header></app-header>
 <h1>contact works!</h1>
+<form [formGroup]="contact" (submit)="onSubmit()">
+    <input type="email" formControlName="username" placeholder="Email">
+    <br/>
+    <br/>
+    <input type="city" formControlName="city" placeholder="City">
+    <br/>
+    <br/>
+    <button type="submit">Submit</button>
+</form>
